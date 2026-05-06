@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yash | Software & AI Engineer — Tokyo</title>
+<meta name="description" content="Yash — Software Engineer & AI Engineer based in Tokyo, Japan. Specializing in LLMs, RAG, LangChain, Java, and full-stack development.">
+<meta name="keywords" content="Yash, Software Engineer, AI Engineer, Tokyo, Japan, LLM, RAG, LangChain, Java, Python">
+<meta property="og:title" content="Yash | Software & AI Engineer — Tokyo">
+<meta property="og:description" content="Software & AI Engineer based in Tokyo, Japan. Building intelligent systems and robust software.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0D2137">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Syne:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<!-- JSON-LD Person Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Yash",
+  "jobTitle": "Software & AI Engineer",
+  "email": "yashchawla116@gmail.com",
+  "telephone": "+81-80-7723-5607",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Tokyo",
+    "addressCountry": "JP"
+  },
+  "url": "https://yash.dev",
+  "sameAs": [
+    "https://github.com/King_Boss",
+    "https://linkedin.com/in/yash_boss",
+    "https://leetcode.com/Code_Ok",
+    "https://hackerrank.com/yash_2019"
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- Scroll Progress Bar -->
+<div id="scroll-progress"></div>
+
+<!-- Page Curtain Transition -->
+<div id="curtain"></div>
+
+<!-- ─── CINEMATIC LOADER ─── -->
+<div id="loader">
+  <div id="loader-letters">
+    <span class="loader-letter" id="ll-y">Y</span>
+    <span class="loader-letter teal" id="ll-a">A</span>
+    <span class="loader-letter" id="ll-s">S</span>
+    <span class="loader-letter teal" id="ll-h">H</span>
+  </div>
+  <div id="loader-sub">Software &amp; AI Engineer · Tokyo</div>
+  <div id="loader-bar"><div id="loader-fill"></div></div>
+</div>
+
+<!-- ─── NAVIGATION ─── -->
+<nav id="main-nav">
+  <a href="#" class="nav-logo" data-nav="home">Y<span>.</span></a>
+  <ul class="nav-links" id="nav-links-desktop">
+    <li><a href="#" data-nav="home" class="active" data-en="Home" data-ja="ホーム">ホーム</a></li>
+    <li><a href="#" data-nav="about" data-en="About" data-ja="自己紹介">自己紹介</a></li>
+    <li><a href="#" data-nav="resume" data-en="Resume" data-ja="履歴書">履歴書</a></li>
+    <li><a href="#" data-nav="projects" data-en="Projects" data-ja="プロジェクト">プロジェクト</a></li>
+    <li><a href="#" data-nav="services" data-en="Skills" data-ja="スキル">スキル</a></li>
+    <li><a href="#" data-nav="contact" data-en="Contact" data-ja="お問い合わせ">お問い合わせ</a></li>
+  </ul>
+  <button class="lang-toggle" id="lang-toggle">
+    <span class="lang-dot"></span>
+    <span id="lang-label">EN</span>
+  </button>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ─── MOBILE MENU ─── -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#" data-nav="home" data-en="Home" data-ja="ホーム">Home</a>
+  <a href="#" data-nav="about" data-en="About" data-ja="自己紹介">About</a>
+  <a href="#" data-nav="resume" data-en="Resume" data-ja="履歴書">Resume</a>
+  <a href="#" data-nav="projects" data-en="Projects" data-ja="プロジェクト">Projects</a>
+  <a href="#" data-nav="services" data-en="Skills" data-ja="スキル">Skills</a>
+  <a href="#" data-nav="contact" data-en="Contact" data-ja="お問い合わせ">Contact</a>
+  <button class="lang-toggle" style="margin-top:16px" id="lang-toggle-mob">
+    <span class="lang-dot"></span>
+    <span id="lang-label-mob">EN</span>
+  </button>
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<!--  PAGE CONTAINERS — loaded from /pages/*.html  -->
+<!--  (inline here for zero-dependency deployment) -->
+<!-- ══════════════════════════════════════════════ -->
+
+<!-- PAGE: HOME -->
+<div id="page-home" class="page active"></div>
+
+<!-- PAGE: ABOUT -->
+<div id="page-about" class="page"></div>
+
+<!-- PAGE: RESUME -->
+<div id="page-resume" class="page"></div>
+
+<!-- PAGE: PROJECTS -->
+<div id="page-projects" class="page"></div>
+
+<!-- PAGE: SERVICES / SKILLS -->
+<div id="page-services" class="page"></div>
+
+<!-- PAGE: CONTACT -->
+<div id="page-contact" class="page"></div>
+
+<!-- ─── SCRIPTS ─── -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+<script src="js/data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/router.js"></script>
+<script src="js/hero3d.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/pages/home.js"></script>
+<script src="js/pages/about.js"></script>
+<script src="js/pages/resume.js"></script>
+<script src="js/pages/projects.js"></script>
+<script src="js/pages/services.js"></script>
+<script src="js/pages/contact.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

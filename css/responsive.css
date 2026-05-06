@@ -1,0 +1,151 @@
+/* ════════════════════════════════════════════════════
+   responsive.css — Breakpoints & Media Queries
+   ════════════════════════════════════════════════════ */
+
+/* ─── Tablet (≤ 900px) ─── */
+@media (max-width: 900px) {
+  .about-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+/* ─── Mobile nav (≤ 768px) ─── */
+@media (max-width: 768px) {
+  .nav-links,
+  .lang-toggle {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-menu {
+    display: none !important;
+  }
+}
+
+/* ─── Small tablet (≤ 700px) ─── */
+@media (max-width: 700px) {
+  .exp-card {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .edu-card {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+/* ─── Mobile (≤ 480px) ─── */
+@media (max-width: 480px) {
+  .stat-row {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-full-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-matrix {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-cta-row {
+    flex-direction: column;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    justify-content: center;
+  }
+
+  .tab-bar {
+    padding: 0 16px;
+  }
+
+  .tab-btn {
+    padding: 12px 16px;
+    font-size: 0.72rem;
+  }
+}
+
+/* ─── Ultra-wide (≥ 1440px) ─── */
+@media (min-width: 1440px) {
+  .hero-content,
+  .services-preview,
+  .about-hero,
+  .timeline-section,
+  .profiles-section,
+  .resume-header,
+  .tab-content,
+  .projects-header,
+  .projects-grid,
+  .services-hero,
+  .services-full-grid,
+  .skill-matrix-section,
+  .contact-hero,
+  .contact-grid {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ─── Touch devices: disable custom cursor ─── */
+@media (hover: none) {
+  #cursor,
+  #cursor-ring {
+    display: none;
+  }
+
+  body {
+    cursor: auto;
+  }
+
+  a, button { cursor: pointer; }
+}
+
+/* ─── Print ─── */
+@media print {
+  nav,
+  #cursor,
+  #cursor-ring,
+  #scroll-progress,
+  #curtain,
+  #loader,
+  .mobile-menu,
+  .marquee-section,
+  footer {
+    display: none !important;
+  }
+
+  .page { display: block !important; }
+
+  body {
+    cursor: auto;
+    background: white;
+    color: black;
+  }
+}
